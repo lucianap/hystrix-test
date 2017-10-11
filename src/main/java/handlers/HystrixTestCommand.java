@@ -11,16 +11,21 @@ import java.net.URLConnection;
 public class HystrixTestCommand extends HystrixCommand<String> {
 
     private final String errorRate;
+    private int userId;
 
-    public HystrixTestCommand(String errorRate) {
+    private String url = "http://localhost:9090/faulty";
+
+    public HystrixTestCommand(String errorRate, int userId) {
         super(HystrixCommandGroupKey.Factory.asKey("ExampleGroup"));
         this.errorRate = errorRate;
+        this.userId = userId;
     }
 
     @Override
     protected String run() throws Exception {
         PostSender ps = new PostSender();
-        ps.sendGet("http://localhost:8080/test?errorRate="+errorRate);
+        ps.sendGet(url+"?errorRate="+errorRate);
         return "I'm fine";
     }
+
 }
