@@ -1,7 +1,8 @@
-package handlers;
+package handlers.blocking;
 
 import com.netflix.hystrix.HystrixCommand;
 import com.netflix.hystrix.HystrixCommandGroupKey;
+import handlers.PostSender;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

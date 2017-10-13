@@ -1,5 +1,4 @@
-import handlers.HystrixObservableTestServlet;
-import handlers.HystrixServlet;
+import handlers.observable.HystrixObservableTestServlet;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 

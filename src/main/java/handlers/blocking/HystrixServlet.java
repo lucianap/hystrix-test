@@ -1,4 +1,4 @@
-package handlers;
+package handlers.blocking;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;

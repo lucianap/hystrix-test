@@ -1,4 +1,4 @@
-package handlers;
+package handlers.observable;
 
 import model.User;
 import model.UserResult;

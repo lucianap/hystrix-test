@@ -1,7 +1,8 @@
-package handlers;
+package handlers.observable;
 
 import com.netflix.hystrix.HystrixCommandGroupKey;
 import com.netflix.hystrix.HystrixObservableCommand;
+import handlers.PostSender;
 import model.User;
 import model.UserResult;
 import rx.Observable;
