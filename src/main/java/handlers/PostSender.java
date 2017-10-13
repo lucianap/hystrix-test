@@ -11,7 +11,7 @@ public class PostSender {
 
     private final String USER_AGENT = "Mozilla/5.0";
 
-    public void sendGet(String URL) throws Exception {
+    public StringBuffer sendGet(String URL) throws Exception {
         String url = URL;
 
         URL obj = new URL(url);
@@ -32,6 +32,8 @@ public class PostSender {
             response.append(inputLine);
         }
         in.close();
+
+        return response;
     }
 
 }

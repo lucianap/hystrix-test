@@ -22,6 +22,8 @@ public class HystrixObservableTestServlet extends HttpServlet {
     public static List<UserResult> usersFailed = new ArrayList<UserResult>();
     public static int failures = 0;
 
+
+
     public void reset(){
         userSuccessed = new ArrayList<UserResult>();
         usersFailed = new ArrayList<UserResult>();

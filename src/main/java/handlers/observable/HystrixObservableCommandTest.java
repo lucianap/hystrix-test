@@ -18,7 +18,7 @@ public class HystrixObservableCommandTest extends HystrixObservableCommand<UserR
     private String RESULT_SUCCESS = "success";
     private String RESULT_FAIL = "fail";
 
-    protected HystrixObservableCommandTest(User u, String errorRate) {
+    public HystrixObservableCommandTest(User u, String errorRate) {
         super(HystrixCommandGroupKey.Factory.asKey("UserGroup"));
         this.u = u;
         this.errorRate = errorRate;
